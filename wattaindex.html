@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wattatoys Pre-order Script Generator</title>
+    <link id="themeStylesheet" rel="stylesheet" href="https://drive.google.com/uc?export=download&id=1RP2Yvny9AnQOD7dUooWa4Lsb_OE7zQlY">
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://drive.google.com/uc?export=download&id=1ToXJmTl_3aNfRdS4DwEYQuSw6gHBjERz" alt="Wattatoys Pre-order Script Generator Header">
+    </div>
+    <!-- Left Side: Input Form -->
+	<div class="inputcontainer">
+		<h2>Insert Product Info Here</h2>
+		<input type="text" id="name" placeholder="Description">
+				
+		<!-- Row for SRP, Pre-order Price, and Downpayment -->
+		<div class="pricerow">
+			<input type="number" id="srp" placeholder="SRP">
+			<input type="number" id="po_price" placeholder="Pre-order Price">
+			<input type="number" id="dp" placeholder="Downpayment">
+		</div>
+
+		<!-- Row for Reservation Due Date and Release Date -->
+		<div class="daterow">
+			<input type="text" id="deadline" placeholder="Reservation Deadline">
+			<input type="text" id="eta" placeholder="ETA">
+		</div>
+
+		<input type="text" id="manufacturer" placeholder="Manufacturer">
+		<input type="text" id="series" placeholder="Series (Optional)">
+		<button onclick="generateText()">WATTA-GENERATE!</button>
+		<button onclick="clearFields()">Clear</button>
+	</div>
+
+
+    <!-- Right Side: Output -->
+    <div class="outputcontainer">
+        <h2>Pre-order Script</h2>
+		<button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <p class="output" id="outputText">Your generated script will appear here.</p>
+		
+    </div>
+	
+	 <div class="theme-toggle">
+        <label for="theme">Select Theme:</label>
+        <select id="theme" onchange="changeTheme()">
+            <option value="https://drive.google.com/uc?export=download&id=1OvID2hm3EjkYleDZihSUYFKzvlKXlzhF">Retro</option>
+            <option value="https://drive.google.com/uc?export=download&id=1RP2Yvny9AnQOD7dUooWa4Lsb_OE7zQlY">WattaDark</option>
+        </select>
+    </div>
+	
+	<script src="https://drive.google.com/uc?export=download&id=1jRKFRpf61m8X6IpCPPKYUKg7NTsiEOib"></script>
+
+</body>
+</html>
